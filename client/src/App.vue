@@ -2,7 +2,7 @@
   <div id="nav">
     <router-link to="/">Home</router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
@@ -12,17 +12,20 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #fafafa;
 }
 
 #nav {
-  padding: 30px;
+  padding-top: 1rem;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
 
     &.router-link-exact-active {
       color: #42b983;
+      border-bottom: 2px solid #42b983;
     }
   }
 }
